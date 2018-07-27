@@ -14,15 +14,12 @@ import {
 export default class DetailVC extends Component {
     //接收上一个页面传过来的title显示出来
     static navigationOptions = ({ navigation }) => ({
-        title: navigation.state.params.title
+        // title: navigation.state.params.title
     });
     // 点击返回上一页方法
     backVC=()=>{
         //返回首页方法
-        // this.props.navigation.goBack();
-
-        let {navigate} = this.props.navigation;
-        navigate('PersonVC', { title: '详情',des:'我是返回点击我' });
+        this.props.navigation.goBack();
     };
     render() {
         return (
