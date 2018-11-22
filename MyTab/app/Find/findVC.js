@@ -10,6 +10,11 @@ import {
 } from 'react-native';
 
 export default class findVC extends Component {
+
+    static navigationOptions = {
+        header: null,
+    };
+
     render() {
         return (
             <View style={styles.container}>
